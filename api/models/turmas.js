@@ -25,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
   Turmas.init({
     data_inicio: DataTypes.DATEONLY
   }, {
+    paranoid: true,
     sequelize,
     modelName: 'Turmas',
   });

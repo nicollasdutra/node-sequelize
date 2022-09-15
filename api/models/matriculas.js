@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   Matriculas.init({
     status: DataTypes.STRING
   }, {
+    paranoid: true,
     sequelize,
     modelName: 'Matriculas',
   });
